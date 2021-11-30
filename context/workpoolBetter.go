@@ -84,9 +84,9 @@ func (s *Scheduler) Create() {
 		worker := NewWorker(s.WorkerPool, i)
 		worker.Start()
 		workers[i] = &worker
-		s.Workers = workers
-		go s.schedule()
 	}
+	s.Workers = workers
+	go s.schedule()
 }
 
 func (s *Scheduler) Shutdown() {
