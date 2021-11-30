@@ -1,0 +1,5 @@
+运行 ws.go 代码 启动 ws 服务器
+访问 127.0.0.1:7778 进行注册 ws 客户端
+使用终端输入
+curl -H "Accept:application/json" -XPOST -d '{"name": "zhangsan", "mess": "hello"}' localhost:7778/chat
+服务端会将消息广播到客户端
