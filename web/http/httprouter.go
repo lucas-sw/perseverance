@@ -1,6 +1,6 @@
 package main
 
-//http 对于路由的处理比较单一
+//web 对于路由的处理比较单一
 import (
 	"fmt"
 	"github.com/julienschmidt/httprouter"

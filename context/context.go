@@ -59,7 +59,7 @@ func connect(c context.Context) error {
 }
 
 func main() {
-	url = "http://google.com"
+	url = "web://google.com"
 	ctx := context.Background()
 	ctx, cancel := context.WithTimeout(ctx, time.Duration(t)*time.Second)
 	defer cancel()
